@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1601946859 source:d:\codeblocks\projects\cadenas\main.c
+	"Cadenas.h"
+	<stdio.h>
+	<stdlib.h>
+
+1601948152 source:d:\codeblocks\projects\cadenas\cadenas.c
+	"Cadenas.h"
+
+1601947693 d:\codeblocks\projects\cadenas\cadenas.h
+	<stddef.h>
+
