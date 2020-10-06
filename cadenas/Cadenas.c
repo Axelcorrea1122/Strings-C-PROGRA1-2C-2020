@@ -30,8 +30,8 @@ int contieneSubCadena(const char* cad, const char* subCad)
 char* normalizar(const char* textoOrig,char* textoDest)
 {
     Secuencia secLect, secEsc;
-    inicializarCadena(&secLect, (char*)textoOrig);
-    inicializarCadena(&secEsc, textoDest);
+    inicializarSecuencia(&secLect, (char*)textoOrig);
+    inicializarSecuencia(&secEsc, textoDest);
 
     Palabra palabra, palabraDest;
 
@@ -133,14 +133,14 @@ char aMinuscula(char car)
 int contarPalabraMasLarga(const char* texto, Palabra* palabraMasLarga)
 {
     Secuencia sec;
-    inicializarCadena(&sec, texto);
+    inicializarSecuencia(&sec, (char*)texto);
     Palabra palabra;
     leerPalabra(&sec, &palabra);
 
     if(finSecuencia(&sec))
-        return o;
+        return 0;
 
-    palabraMasLarga = palabra;
+    *palabraMasLarga = palabra;
     int cantApariciones = 1;
     int longPalMLarga = longitud(palabraMasLarga);
     int longPalAct;
@@ -178,7 +178,7 @@ int comparar(const Palabra* pal1, const Palabra* pal2)
     char* p1 = pal1->ini;
     char* p2 = pal2->ini;
 
-    while(p1 <= pal1->fin && p2 <= pal2->fin && *pl == *p2)
+    while(p1 <= pal1->fin && p2 <= pal2->fin && *p1 == *p2)
     {
         p1++;
         p2++;
@@ -195,4 +195,5 @@ int comparar(const Palabra* pal1, const Palabra* pal2)
         return 0;
     if(finCad1 && finCad2)
         return *p1 - *p2;
+    return 0;
 }

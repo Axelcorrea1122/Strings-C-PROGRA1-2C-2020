@@ -34,4 +34,6 @@ int esLetra(char car);
 char aMayuscula(char car);
 char aMinuscula(char car);
 int contarPalabraMasLarga(const char* texto, Palabra* palabraMasLarga);
+int comparar(const Palabra* pal1, const Palabra* pal2);
+int longitud(const Palabra* pal);
 #endif // CADENAS_H_INCLUDED

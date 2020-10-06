@@ -10,3 +10,14 @@
 1601947693 d:\codeblocks\projects\cadenas\cadenas.h
 	<stddef.h>
 
+1602004118 source:d:\codeblocks\projects\strings\cadenas\cadenas.c
+	"Cadenas.h"
+
+1602003652 d:\codeblocks\projects\strings\cadenas\cadenas.h
+	<stddef.h>
+
+1602004174 source:d:\codeblocks\projects\strings\cadenas\main.c
+	"Cadenas.h"
+	<stdio.h>
+	<stdlib.h>
+
